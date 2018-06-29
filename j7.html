@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>j7</title>
+    <script src="vue.js"></script>
+</head>
+<body>
+<div id="vue_det">
+    <h1>{{title}}</h1>
+    <h2>{{p1}}</h2>
+    <h3>{{p2()}}</h3>
+</div>
+
+</body>
+<script type="text/javascript">
+    var vm = new Vue({
+        el: '#vue_det',
+        data:{
+            title:'HHHHH    HHHH',
+            p1:'oooooooooooo'
+        },
+        methods: {
+            p2: function(){
+                return this.title + 'KLJLJLL';
+            }
+        }
+    })
+</script>
+</html>
